@@ -1,4 +1,4 @@
-import './button.css';
+import './button.scss';
 import SearchIcon from '@mui/icons-material/Search';
 
 interface ButtonProps {
@@ -26,7 +26,7 @@ interface ButtonProps {
 
 /**
  * Primary UI component for user interaction
- */
+ */ 
 export const Button = ({
   primary = false,
   size = 'medium',
@@ -43,7 +43,7 @@ export const Button = ({
       {...props}
     >
       {label}
-      <SearchIcon />
+      <SearchIcon sx={{ fontSize: 14 }} />
     </button>
   );
 };

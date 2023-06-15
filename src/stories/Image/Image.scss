@@ -1,0 +1,14 @@
+.rf-inputform {
+  position: relative;
+  width: fit-content;
+  .rf-input {
+    outline: none;
+    height: 30px;
+    border-width: 0 0 1px 0;
+  }
+  .rf-button {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}

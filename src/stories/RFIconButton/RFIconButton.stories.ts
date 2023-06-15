@@ -1,21 +1,18 @@
-import type { Meta, StoryObj } from '@storybook/react';
-import { Header } from '.';
+import type { Meta, StoryObj } from "@storybook/react";
+import { RFIconButton } from ".";
 
 const meta = {
-  title: 'Common/Header',
-  component: Header,
+  title: "RF/RFIconButton",
+  component: RFIconButton,
   // This component will have an automatically generated Autodocs entry: https://storybook.js.org/docs/react/writing-docs/autodocs
-  tags: ['autodocs'],
+  tags: ["autodocs"],
   parameters: {
     // More on how to position stories at: https://storybook.js.org/docs/react/configure/story-layout
-    layout: 'fullscreen',
+    layout: "fullscreen",
   },
-} satisfies Meta<typeof Header>;
+} satisfies Meta<typeof RFIconButton>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const MyHeader: Story = {
-  args: {}
-};
-
+export const MyRFIconButton: Story = { args: { icon: "search" } };

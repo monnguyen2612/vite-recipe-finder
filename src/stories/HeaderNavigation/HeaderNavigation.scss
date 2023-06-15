@@ -1,0 +1,41 @@
+/* App.css */
+.header-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  align-items: center;
+  justify-content: center;
+  .items {
+    display: flex;
+  }
+  
+  .nav-item {
+    padding: 0 10px;
+    font-weight: normal;
+    color: #000;
+    line-height: .5;
+    display: flex;
+    align-items: center;
+    height: 96px;
+    text-decoration: none;
+    color: #333;
+    margin-right: 20px;
+    white-space: nowrap;
+    
+    &:hover {
+      color: orange;
+      -webkit-transition: .25s ease-in-out;
+      transition: .25s ease-in-out;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  
+  
+  .nav-item:nth-child(2) {
+    margin-right: 168px;
+  }
+}
